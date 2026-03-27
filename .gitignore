@@ -1,2 +1,6 @@
-quantum_venv/
 __pycache__/
+quantum_venv/
+.env
+.vscode/
+model/data/
+.DS_Store
