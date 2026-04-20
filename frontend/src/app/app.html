@@ -1,0 +1,16 @@
+<div class="mirror-root">
+  @switch (mirrorState.state$ | async) {
+    @case (MirrorState.IDLE) {
+      <app-idle class="state-view" />
+    }
+    @case (MirrorState.STARTUP) {
+      <app-startup class="state-view" />
+    }
+    @case (MirrorState.CAMERA) {
+      <app-camera class="state-view" />
+    }
+    @case (MirrorState.OUTPUT) {
+      <app-output class="state-view" />
+    }
+  }
+</div>

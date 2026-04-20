@@ -4,3 +4,7 @@ quantum_venv/
 .vscode/
 model/data/
 .DS_Store
+
+# Angular
+.angular/
+dist/

@@ -1,0 +1,123 @@
+@neon-cyan: #00f0ff;
+
+.startup-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.scanline {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: repeating-linear-gradient(
+    0deg,
+    transparent,
+    transparent 2px,
+    rgba(0, 240, 255, 0.015) 2px,
+    rgba(0, 240, 255, 0.015) 4px
+  );
+  pointer-events: none;
+  z-index: 1;
+}
+
+.content {
+  text-align: center;
+  z-index: 2;
+}
+
+.title {
+  font-size: 2.4rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.08em;
+  text-shadow:
+    0 0 10px rgba(0, 240, 255, 0.4),
+    0 0 40px rgba(0, 240, 255, 0.15);
+  animation: glow-pulse 3s ease-in-out infinite;
+}
+
+.game-frame {
+  width: 720px;
+  max-width: 90vw;
+  aspect-ratio: 16 / 9;
+  margin: 1.5rem auto 0.75rem;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  background: #000;
+  overflow: hidden;
+}
+
+.feed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.game-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: rgba(0, 240, 255, 0.5);
+}
+
+.hud {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  color: @neon-cyan;
+  margin-top: 0.5rem;
+}
+
+.divider {
+  width: 120px;
+  height: 1px;
+  background: linear-gradient(90deg, transparent, @neon-cyan, transparent);
+  margin: 1.5rem auto;
+  opacity: 0.5;
+}
+
+// Animations
+.fade-in {
+  animation: fade-in 1.5s ease-out forwards, glow-pulse 3s ease-in-out 1.5s infinite;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fade-in 0.4s ease-out 0.7s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% {
+    text-shadow:
+      0 0 10px rgba(0, 240, 255, 0.4),
+      0 0 40px rgba(0, 240, 255, 0.15);
+  }
+  50% {
+    text-shadow:
+      0 0 15px rgba(0, 240, 255, 0.6),
+      0 0 60px rgba(0, 240, 255, 0.25);
+  }
+}

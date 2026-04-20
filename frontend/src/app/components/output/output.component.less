@@ -1,0 +1,188 @@
+@neon-cyan: #00f0ff;
+
+.output-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.result-container {
+  display: flex;
+  gap: 4rem;
+  align-items: center;
+  max-width: 1100px;
+  padding: 2rem;
+}
+
+// Left: Image panel
+.image-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+  flex-shrink: 0;
+}
+
+.image-frame {
+  width: 280px;
+  height: 340px;
+  border: 1px solid rgba(0, 240, 255, 0.3);
+  padding: 4px;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 240, 255, 0.1);
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.match-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+}
+
+.match-pct {
+  font-size: 2rem;
+  font-weight: 900;
+  color: @neon-cyan;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+}
+
+.match-label {
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  color: rgba(0, 240, 255, 0.5);
+}
+
+// Right: Info panel
+.info-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.label {
+  font-size: 0.6rem;
+  letter-spacing: 0.4em;
+  color: rgba(0, 240, 255, 0.5);
+  margin-bottom: 0.3rem;
+}
+
+.name {
+  font-size: 2.5rem;
+  font-weight: 900;
+  color: #fff;
+  letter-spacing: 0.05em;
+  text-shadow: 0 0 10px rgba(0, 240, 255, 0.2);
+  line-height: 1.1;
+}
+
+.position {
+  font-size: 1rem;
+  font-weight: 700;
+  color: @neon-cyan;
+  letter-spacing: 0.08em;
+  margin-top: 0.5rem;
+}
+
+.role {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.4);
+  letter-spacing: 0.1em;
+}
+
+.research-areas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.chip {
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid rgba(0, 240, 255, 0.25);
+  color: rgba(0, 240, 255, 0.7);
+  background: rgba(0, 240, 255, 0.03);
+}
+
+// Video placeholder
+.video-placeholder {
+  margin-top: 1.5rem;
+}
+
+.video-frame {
+  width: 320px;
+  height: 140px;
+  border: 1px solid rgba(0, 240, 255, 0.15);
+  background: rgba(0, 240, 255, 0.02);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: border-color 0.3s;
+
+  &:hover {
+    border-color: rgba(0, 240, 255, 0.4);
+  }
+}
+
+.play-icon {
+  font-size: 1.5rem;
+  color: rgba(0, 240, 255, 0.4);
+}
+
+.video-label {
+  font-size: 0.55rem;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.25);
+}
+
+// Staggered fade-in animations
+.fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-1 {
+  animation: fade-in 0.8s ease-out 0.2s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fade-in 0.8s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fade-in 0.8s ease-out 0.8s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-4 {
+  animation: fade-in 0.8s ease-out 1.1s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,183 @@
+@neon-cyan: #00f0ff;
+
+.camera-screen {
+  width: 100vw;
+  height: 100vh;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.frame-container {
+  position: relative;
+  width: 640px;
+  height: 480px;
+  animation: fade-in 0.8s ease-out forwards;
+}
+
+// Corner brackets
+.corner {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-color: @neon-cyan;
+  border-style: solid;
+  border-width: 0;
+  opacity: 0.7;
+
+  &.top-left {
+    top: 0; left: 0;
+    border-top-width: 2px;
+    border-left-width: 2px;
+  }
+  &.top-right {
+    top: 0; right: 0;
+    border-top-width: 2px;
+    border-right-width: 2px;
+  }
+  &.bottom-left {
+    bottom: 0; left: 0;
+    border-bottom-width: 2px;
+    border-left-width: 2px;
+  }
+  &.bottom-right {
+    bottom: 0; right: 0;
+    border-bottom-width: 2px;
+    border-right-width: 2px;
+  }
+}
+
+.feed-area {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid rgba(0, 240, 255, 0.1);
+}
+
+.feed-placeholder {
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 240, 255, 0.02);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.feed-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.progress,
+.error {
+  font-size: 0.7rem;
+  letter-spacing: 0.3em;
+  margin-top: 1rem;
+}
+
+.progress {
+  color: @neon-cyan;
+}
+
+.error {
+  color: #ff6b6b;
+}
+
+// Crosshair in center
+.crosshair {
+  width: 40px;
+  height: 40px;
+  position: relative;
+
+  &::before, &::after {
+    content: '';
+    position: absolute;
+    background: rgba(0, 240, 255, 0.3);
+  }
+  &::before {
+    width: 1px;
+    height: 100%;
+    left: 50%;
+  }
+  &::after {
+    width: 100%;
+    height: 1px;
+    top: 50%;
+  }
+}
+
+// Scanning line animation
+.scan-line {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, @neon-cyan, transparent);
+  opacity: 0.6;
+  animation: scan 2.5s ease-in-out infinite;
+  z-index: 2;
+}
+
+.status-bar {
+  position: absolute;
+  bottom: -2rem;
+  left: 0;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.status-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: @neon-cyan;
+  animation: blink 1s ease-in-out infinite;
+}
+
+.status-text {
+  font-size: 0.65rem;
+  letter-spacing: 0.3em;
+  color: @neon-cyan;
+  opacity: 0.8;
+}
+
+.instructions {
+  font-size: 0.6rem;
+  letter-spacing: 0.3em;
+  color: rgba(255, 255, 255, 0.25);
+  animation: fade-in 1s ease-out 0.5s forwards;
+  opacity: 0;
+}
+
+@keyframes scan {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(480px);
+  }
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.2; }
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
