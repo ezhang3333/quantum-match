@@ -44,37 +44,27 @@ async def _main() -> None:
     server.write_perf_log("ble_started")
 
     while True:
-        try:
-            device = await BleakScanner.find_device_by_name(DEVICE_NAME, timeout=SCAN_TIMEOUT_S)
-            if device is None:
-                server.write_perf_log("ble_scan_no_device", device_name=DEVICE_NAME)
-                await asyncio.sleep(RESCAN_BACKOFF_S)
-                continue
+        device = await BleakScanner.find_device_by_name(DEVICE_NAME, timeout=SCAN_TIMEOUT_S)
+        if device is None:
+            server.write_perf_log("ble_scan_no_device", device_name=DEVICE_NAME)
+            await asyncio.sleep(RESCAN_BACKOFF_S)
+            continue
 
-            server.write_perf_log("ble_device_found", address=str(device.address))
+        server.write_perf_log("ble_device_found", address=str(device.address))
 
-            async with BleakClient(device) as client:
-                server.write_perf_log("ble_connected", address=str(device.address))
+        async with BleakClient(device) as client:
+            server.write_perf_log("ble_connected", address=str(device.address))
 
-                def _on_notify(_handle, data: bytearray) -> None:
-                    _handle_payload(bytes(data))
+            def _on_notify(_handle, data: bytearray) -> None:
+                _handle_payload(bytes(data))
 
-                await client.start_notify(CHAR_UUID, _on_notify)
-                server.write_perf_log("ble_notify_started", char=CHAR_UUID)
+            await client.start_notify(CHAR_UUID, _on_notify)
+            server.write_perf_log("ble_notify_started", char=CHAR_UUID)
 
-                while client.is_connected:
-                    await asyncio.sleep(1.0)
+            while client.is_connected:
+                await asyncio.sleep(1.0)
 
-                server.write_perf_log("ble_disconnected", address=str(device.address))
-
-        except BleakError as exc:
-            server.write_perf_log("ble_error", error=str(exc))
-            print(f"ble_client: BleakError {exc}")
-            await asyncio.sleep(DISCONNECT_BACKOFF_S)
-        except Exception as exc:
-            server.write_perf_log("ble_loop_exception", error=str(exc))
-            print(f"ble_client: unexpected error {exc}")
-            await asyncio.sleep(DISCONNECT_BACKOFF_S)
+            server.write_perf_log("ble_disconnected", address=str(device.address))
 
 
 def _handle_payload(data: bytes) -> None:
