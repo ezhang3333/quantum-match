@@ -1,17 +1,21 @@
 import {
   AfterViewInit,
-  Component,
   ChangeDetectionStrategy,
+  Component,
   ElementRef,
-  inject,
-  signal,
   OnDestroy,
   ViewChild,
+  inject,
+  signal,
 } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
-import { Subscription } from 'rxjs';
-import { WebSocketService } from '../../services/websocket.service';
+import { firstValueFrom } from 'rxjs';
+import { MatchApiService } from '../../services/match-api.service';
 import { MirrorStateService } from '../../services/mirror-state.service';
+
+const RAW_FRAMES_TO_CAPTURE = 10;
+const CAMERA_SCAN_MS = 5000;
+const CAPTURE_INTERVAL_MS = CAMERA_SCAN_MS / RAW_FRAMES_TO_CAPTURE;
 
 @Component({
   selector: 'app-camera',
@@ -28,8 +32,9 @@ import { MirrorStateService } from '../../services/mirror-state.service';
 
         <div class="feed-area">
           <div class="scan-line"></div>
-          <canvas #feedCanvas class="feed-canvas" [class.visible]="hasFrame()"></canvas>
-          @if (!hasFrame()) {
+          <video #feedVideo class="feed-video" [class.visible]="hasCamera()" autoplay playsinline muted></video>
+          <canvas #captureCanvas class="capture-canvas"></canvas>
+          @if (!hasCamera()) {
             <div class="feed-placeholder">
               <div class="crosshair"></div>
             </div>
@@ -38,7 +43,7 @@ import { MirrorStateService } from '../../services/mirror-state.service';
 
         <div class="status-bar">
           <span class="status-dot"></span>
-          <span class="status-text">SCANNING</span>
+          <span class="status-text">{{ statusText() }}</span>
         </div>
       </div>
 
@@ -56,60 +61,49 @@ import { MirrorStateService } from '../../services/mirror-state.service';
       } @else if (mirrorState.faceError$ | async; as err) {
         <div class="error">
           @switch (err.reason) {
+            @case ('camera_denied') { CAMERA ACCESS DENIED }
+            @case ('camera_unavailable') { CAMERA UNAVAILABLE }
+            @case ('network_error') { MATCH SERVER UNREACHABLE }
             @case ('no_face') { NO FACE DETECTED }
-            @case ('multiple_faces') { MULTIPLE FACES — STAND ALONE }
-            @case ('no_match') { NO MATCH FOUND — TRY AGAIN }
+            @case ('multiple_faces') { MULTIPLE FACES - STAND ALONE }
+            @case ('no_match') { NO MATCH FOUND - TRY AGAIN }
             @default { ERROR }
           }
         </div>
+      } @else if (hasCamera() && !isCapturing()) {
+        <div class="ready-panel">
+          <div class="instructions">CENTER YOUR FACE IN THE FRAME</div>
+          <button type="button" class="begin-button" (click)="beginMatch()">BEGIN QUANTUM MATCH</button>
+        </div>
       } @else {
-        <div class="instructions">HOLD STILL — ANALYZING FEATURES</div>
+        <div class="instructions">ALLOW CAMERA ACCESS</div>
       }
     </div>
   `,
   styleUrl: './camera.component.less',
 })
 export class CameraComponent implements AfterViewInit, OnDestroy {
-  private webSocket = inject(WebSocketService);
+  private matchApi = inject(MatchApiService);
   mirrorState = inject(MirrorStateService);
 
-  @ViewChild('feedCanvas')
+  @ViewChild('feedVideo')
+  private videoRef?: ElementRef<HTMLVideoElement>;
+
+  @ViewChild('captureCanvas')
   private canvasRef?: ElementRef<HTMLCanvasElement>;
 
-  readonly hasFrame = signal(false);
-  private framesSub: Subscription;
-  private canvasContext: CanvasRenderingContext2D | null = null;
-  private pendingBlob: Blob | null = null;
-  private decodeInFlight = false;
+  readonly hasCamera = signal(false);
+  readonly isCapturing = signal(false);
+  private stream: MediaStream | null = null;
   private destroyed = false;
 
-  constructor() {
-    this.framesSub = this.webSocket.frames$.subscribe((blob) => {
-      if (!blob) return;
-      this.pendingBlob = blob;
-      if (!this.decodeInFlight) {
-        void this.flushLatestFrame();
-      }
-    });
-  }
-
   ngAfterViewInit(): void {
-    const canvas = this.canvasRef?.nativeElement;
-    if (!canvas) return;
-
-    this.canvasContext = canvas.getContext('2d', {
-      alpha: false,
-      desynchronized: true,
-    });
-
-    if (this.pendingBlob && !this.decodeInFlight) {
-      void this.flushLatestFrame();
-    }
+    void this.startCameraPreview();
   }
 
   ngOnDestroy(): void {
     this.destroyed = true;
-    this.framesSub.unsubscribe();
+    this.stopCamera();
   }
 
   progressPercent(progress: number, total: number): number {
@@ -117,43 +111,137 @@ export class CameraComponent implements AfterViewInit, OnDestroy {
     return Math.max(0, Math.min(100, (progress / total) * 100));
   }
 
-  private async flushLatestFrame(): Promise<void> {
-    if (this.decodeInFlight || !this.pendingBlob) return;
+  statusText(): string {
+    if (!this.hasCamera()) return 'SYNCING CAMERA';
+    return this.isCapturing() ? 'SCANNING' : 'READY';
+  }
 
-    const blob = this.pendingBlob;
-    this.pendingBlob = null;
-    this.decodeInFlight = true;
+  async beginMatch(): Promise<void> {
+    if (!this.hasCamera() || this.isCapturing()) return;
+
+    const category = this.mirrorState.selectedCategory;
+    if (!category) {
+      this.mirrorState.showError({ reason: 'no_match', count: 0 });
+      return;
+    }
+
+    this.isCapturing.set(true);
+    const frames = await this.captureFrames();
+    if (this.destroyed) return;
+    if (frames.length < RAW_FRAMES_TO_CAPTURE) {
+      this.isCapturing.set(false);
+      this.mirrorState.showError({ reason: 'camera_unavailable', count: 0 });
+      return;
+    }
+
+    this.stopCamera();
+    this.mirrorState.goToInference();
 
     try {
-      const bitmap = await createImageBitmap(blob);
-      try {
-        if (!this.destroyed) {
-          this.drawBitmap(bitmap);
-          this.hasFrame.set(true);
-        }
-      } finally {
-        bitmap.close();
+      const response = await firstValueFrom(this.matchApi.match(category, frames));
+      if (response.error) {
+        this.mirrorState.showError(response.error);
+      } else if (response.matches.length > 0) {
+        this.mirrorState.goToOutput(response.matches[0]);
+      } else {
+        this.mirrorState.showError({ reason: 'no_match', count: 0 });
       }
     } catch {
-      // Ignore corrupt or incomplete frames and keep streaming.
-    } finally {
-      this.decodeInFlight = false;
-      if (this.pendingBlob && !this.destroyed) {
-        void this.flushLatestFrame();
-      }
+      this.mirrorState.showError({ reason: 'network_error', count: 0 });
     }
   }
 
-  private drawBitmap(bitmap: ImageBitmap): void {
-    const canvas = this.canvasRef?.nativeElement;
-    const ctx = this.canvasContext;
-    if (!canvas || !ctx) return;
-
-    if (canvas.width !== bitmap.width || canvas.height !== bitmap.height) {
-      canvas.width = bitmap.width;
-      canvas.height = bitmap.height;
+  private async startCameraPreview(): Promise<void> {
+    try {
+      this.stream = await navigator.mediaDevices.getUserMedia({
+        video: {
+          facingMode: 'user',
+          width: { ideal: 1280 },
+          height: { ideal: 720 },
+        },
+        audio: false,
+      });
+    } catch (error) {
+      const denied = error instanceof DOMException && error.name === 'NotAllowedError';
+      this.mirrorState.showError({ reason: denied ? 'camera_denied' : 'camera_unavailable', count: 0 });
+      return;
     }
 
-    ctx.drawImage(bitmap, 0, 0, canvas.width, canvas.height);
+    const video = this.videoRef?.nativeElement;
+    if (!video) {
+      this.mirrorState.showError({ reason: 'camera_unavailable', count: 0 });
+      return;
+    }
+
+    video.srcObject = this.stream;
+    await video.play();
+    this.hasCamera.set(true);
+  }
+
+  private async captureFrames(): Promise<string[]> {
+    const frames: string[] = [];
+    const startedAt = performance.now();
+
+    for (let i = 0; i < RAW_FRAMES_TO_CAPTURE; i += 1) {
+      if (this.destroyed) break;
+
+      const targetTime = startedAt + i * CAPTURE_INTERVAL_MS;
+      await this.sleep(Math.max(0, targetTime - performance.now()));
+
+      const frame = await this.captureFrame();
+      if (frame) {
+        frames.push(frame);
+      }
+
+      this.mirrorState.updateCollecting({
+        progress: Math.min(CAMERA_SCAN_MS, Math.round(performance.now() - startedAt)),
+        total: CAMERA_SCAN_MS,
+        captured: frames.length,
+        required: RAW_FRAMES_TO_CAPTURE,
+        ready: frames.length >= RAW_FRAMES_TO_CAPTURE,
+      });
+    }
+
+    await this.sleep(Math.max(0, startedAt + CAMERA_SCAN_MS - performance.now()));
+    this.mirrorState.updateCollecting({
+      progress: CAMERA_SCAN_MS,
+      total: CAMERA_SCAN_MS,
+      captured: frames.length,
+      required: RAW_FRAMES_TO_CAPTURE,
+      ready: frames.length >= RAW_FRAMES_TO_CAPTURE,
+    });
+
+    return frames;
+  }
+
+  private captureFrame(): string | null {
+    const video = this.videoRef?.nativeElement;
+    const canvas = this.canvasRef?.nativeElement;
+    if (!video || !canvas || video.videoWidth === 0 || video.videoHeight === 0) {
+      return null;
+    }
+
+    canvas.width = video.videoWidth;
+    canvas.height = video.videoHeight;
+    const ctx = canvas.getContext('2d', { alpha: false });
+    if (!ctx) return null;
+
+    ctx.translate(canvas.width, 0);
+    ctx.scale(-1, 1);
+    ctx.drawImage(video, 0, 0, canvas.width, canvas.height);
+    ctx.setTransform(1, 0, 0, 1, 0, 0);
+
+    return canvas.toDataURL('image/jpeg', 0.86);
+  }
+
+  private sleep(ms: number): Promise<void> {
+    return new Promise((resolve) => setTimeout(resolve, ms));
+  }
+
+  private stopCamera(): void {
+    this.stream?.getTracks().forEach((track) => track.stop());
+    this.stream = null;
+    this.hasCamera.set(false);
+    this.isCapturing.set(false);
   }
 }

@@ -12,7 +12,7 @@ import {
 import { AsyncPipe } from '@angular/common';
 import { Subscription } from 'rxjs';
 import { MirrorStateService } from '../../services/mirror-state.service';
-import { apiUrl } from '../../services/websocket.service';
+import { apiUrl } from '../../services/api-config';
 
 @Component({
   selector: 'app-output',
@@ -21,7 +21,9 @@ import { apiUrl } from '../../services/websocket.service';
   changeDetection: ChangeDetectionStrategy.OnPush,
   template: `
     @if (mirrorState.matchResult$ | async; as result) {
-      <div class="output-screen">
+      <div
+        class="output-screen"
+      >
         <div class="result-container">
           <div class="top-row">
             <div class="image-panel fade-in">
@@ -62,6 +64,10 @@ import { apiUrl } from '../../services/websocket.service';
               </div>
             </div>
           }
+
+          <button type="button" class="restart-button fade-in-delay-4" (click)="restart()">
+            RUN ANOTHER QUANTUM LOOP
+          </button>
         </div>
       </div>
     }
@@ -109,6 +115,10 @@ export class OutputComponent implements AfterViewInit, OnDestroy {
     if (this.pendingFrame !== null) {
       cancelAnimationFrame(this.pendingFrame);
     }
+  }
+
+  restart(): void {
+    this.mirrorState.goToIdle();
   }
 
   private scheduleFit(): void {

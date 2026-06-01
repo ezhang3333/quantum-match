@@ -77,6 +77,8 @@
 }
 
 .category-card {
+  appearance: none;
+  font: inherit;
   width: clamp(210px, 20vw, 270px);
   min-height: clamp(250px, 23vw, 310px);
   border: 2px solid var(--qm-panel-border);
@@ -94,6 +96,7 @@
   gap: 1rem;
   padding: 1.7rem 1.2rem;
   position: relative;
+  cursor: pointer;
   transition:
     transform 220ms ease-out,
     border-color 220ms ease-out,
@@ -126,6 +129,10 @@
     color: var(--qm-accent-deep);
     text-shadow: 0 0 14px rgba(0, 216, 255, 0.18);
     line-height: 1;
+    transition:
+      color 180ms ease-out,
+      text-shadow 180ms ease-out,
+      transform 180ms ease-out;
   }
 
   .card-name {
@@ -134,6 +141,7 @@
     font-size: 1rem;
     letter-spacing: 0.28em;
     color: var(--qm-text-primary);
+    transition: color 180ms ease-out;
   }
 
   .card-tag {
@@ -153,6 +161,33 @@
       0 0 54px rgba(0, 192, 255, 0.24),
       inset 0 0 0 1px rgba(255, 255, 255, 0.84);
     animation: card-flash 420ms ease-out;
+  }
+
+  &:hover {
+    transform: translateY(-5px) scale(1.015);
+    border-color: rgba(0, 154, 255, 0.78);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(230, 251, 255, 0.96) 52%, rgba(212, 244, 255, 0.98)),
+      radial-gradient(circle at top, rgba(0, 216, 255, 0.2), transparent 60%);
+    box-shadow:
+      var(--qm-shadow-strong),
+      0 0 42px rgba(0, 192, 255, 0.18),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.84);
+
+    .glyph {
+      color: var(--qm-accent);
+      text-shadow: 0 0 18px rgba(0, 216, 255, 0.32);
+      transform: scale(1.04);
+    }
+
+    .card-name {
+      color: var(--qm-accent-deep);
+    }
+  }
+
+  &:focus-visible {
+    outline: 3px solid var(--qm-accent-deep);
+    outline-offset: 6px;
   }
 }
 

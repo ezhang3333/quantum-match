@@ -40,6 +40,49 @@ The matcher relies on two artifacts in [model/data/](model/data/): `embeddings.n
 If instead you want to re-scrape the source sites from scratch (Perimeter Institute, iQuIST, Quantum Insider CTOs), run `python -m model.dataset_builder` first — that rewrites `profiles.json` and re-downloads images — then run `python -m model.embed_dataset` to rebuild the embeddings. `embeddings.npy` and `names.json` should never be edited by hand; always regenerate them via `embed_dataset.py` so they stay in sync.
 
 
+## Web portfolio deployment
+
+The hosted version keeps the same high-level flow (`idle -> category_select -> camera -> inference -> output`) but removes the Raspberry Pi hardware dependencies:
+
+- The browser asks for webcam permission and captures 10 JPEG frames over 5 seconds.
+- Category selection is handled by clickable cards instead of ESP32 Bluetooth buttons.
+- FastAPI exposes a stateless `POST /api/match` endpoint that accepts JSON with `category` and base64 JPEG `frames`.
+- The backend reuses the existing InsightFace embeddings in `model/data/` and serves result images from `/images`.
+
+Run the backend locally:
+
+```bash
+uvicorn display.server:app --host 0.0.0.0 --port 8000
+```
+
+Run the frontend locally:
+
+```bash
+cd display/frontend
+npm run start
+```
+
+For deployment, host `display/frontend` on Vercel and host the FastAPI backend on Render or Railway. The backend start command is:
+
+```bash
+uvicorn display.server:app --host 0.0.0.0 --port $PORT
+```
+
+Set `QM_CORS_ORIGINS` on the backend to your Vercel origin, for example:
+
+```bash
+QM_CORS_ORIGINS=https://your-project.vercel.app
+```
+
+Configure the deployed frontend API target by editing `display/frontend/public/config.js` before deploying:
+
+```js
+window.__QM_API_BASE_URL__ = "https://your-backend.onrender.com";
+```
+
+When `config.js` is empty, local Angular dev automatically calls `http://localhost:8000`, and production falls back to the same origin.
+
+
 ## Raspberry Pi
 
 Once you have connected your Raspberry Pi to your monitor and hooked up a keyboard through the USB-port, try running this command to see

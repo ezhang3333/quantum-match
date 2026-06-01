@@ -1,6 +1,7 @@
 import { Component, ChangeDetectionStrategy, inject } from '@angular/core';
 import { AsyncPipe } from '@angular/common';
 import { MirrorStateService } from '../../services/mirror-state.service';
+import { Category } from '../../models/mirror-state.model';
 
 @Component({
   selector: 'app-category-select',
@@ -13,4 +14,8 @@ import { MirrorStateService } from '../../services/mirror-state.service';
 export class CategorySelectComponent {
   mirrorState = inject(MirrorStateService);
   highlighted$ = this.mirrorState.highlightedCategory$;
+
+  select(category: Category): void {
+    this.mirrorState.selectCategory(category);
+  }
 }
