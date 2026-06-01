@@ -1,0 +1,23 @@
+<div
+  class="mirror-root"
+  [class.theme-idle]="(mirrorState.state$ | async) === MirrorState.IDLE"
+  [class.theme-active-bright]="(mirrorState.state$ | async) !== MirrorState.IDLE"
+>
+  @switch (mirrorState.state$ | async) {
+    @case (MirrorState.IDLE) {
+      <app-idle class="state-view" />
+    }
+    @case (MirrorState.CATEGORY_SELECT) {
+      <app-category-select class="state-view" />
+    }
+    @case (MirrorState.CAMERA) {
+      <app-camera class="state-view" />
+    }
+    @case (MirrorState.INFERENCE) {
+      <app-inference class="state-view" />
+    }
+    @case (MirrorState.OUTPUT) {
+      <app-output class="state-view" />
+    }
+  }
+</div>

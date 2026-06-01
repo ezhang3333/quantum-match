@@ -5,13 +5,22 @@ import numpy as np
 from model.settings import CAPTURED_FACE_PATH, WARMUP_FRAMES, MIN_DET_SCORE, FRAMES_TO_COLLECT, INFERENCE_EVERY_N_FRAMES
 from model.face_match import load_database, find_top_matches
 
+# these could change per OS and computer
+LOCAL_CAMERA_INDEX = 0
+RASPBERRY_PI_LOGITECH_CAMERA = '/dev/video0'
+LOGTIECH_CAMERA_INDEX = 1
+
 app = insightface.app.FaceAnalysis(name="buffalo_l")
 app.prepare(ctx_id=0, det_size=(320, 320))
 
 db_embeddings, db_names = load_database()
 
-# TODO: switch index for Logitech webcam on Pi
-cap = cv2.VideoCapture(0)
+cap = cv2.VideoCapture(RASPBERRY_PI_LOGITECH_CAMERA, cv2.CAP_V4L2)
+cap.set(cv2.CAP_PROP_FOURCC, cv2.VideoWriter_fourcc(*'MJPG'))
+cap.set(cv2.CAP_PROP_FRAME_WIDTH, 1280)
+cap.set(cv2.CAP_PROP_FRAME_HEIGHT, 720)
+cap.set(cv2.CAP_PROP_FPS, 30)
+cap.set(cv2.CAP_PROP_BUFFERSIZE, 1)
 
 if not cap.isOpened():
     raise RuntimeError("Could not open webcam")

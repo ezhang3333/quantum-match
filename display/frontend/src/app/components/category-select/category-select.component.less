@@ -1,0 +1,216 @@
+.category-screen {
+  width: 100vw;
+  height: 100vh;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.grid-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at center, var(--qm-grid-glow), transparent 56%),
+    repeating-linear-gradient(
+      90deg,
+      transparent 0,
+      transparent 56px,
+      var(--qm-grid-line) 56px,
+      var(--qm-grid-line) 57px
+    ),
+    repeating-linear-gradient(
+      180deg,
+      transparent 0,
+      transparent 56px,
+      var(--qm-grid-line) 56px,
+      var(--qm-grid-line) 57px
+    );
+  opacity: 0.95;
+}
+
+.content-shell {
+  position: relative;
+  z-index: 1;
+  width: min(94vw, 1180px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  text-align: center;
+}
+
+.label {
+  font-size: 0.72rem;
+  letter-spacing: 0.42em;
+  color: var(--qm-accent-deep);
+  text-transform: uppercase;
+}
+
+.headline {
+  font-family: 'Orbitron', sans-serif;
+  font-weight: 900;
+  font-size: clamp(2.6rem, 5vw, 4rem);
+  color: var(--qm-text-primary);
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 18px rgba(0, 216, 255, 0.18);
+  margin: 0;
+}
+
+.subhead {
+  font-size: 0.88rem;
+  letter-spacing: 0.28em;
+  color: var(--qm-text-muted);
+  margin: 0 0 1.75rem;
+  text-transform: uppercase;
+}
+
+.card-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: stretch;
+  gap: clamp(22px, 3vw, 40px);
+  margin-top: 0.4rem;
+}
+
+.category-card {
+  width: clamp(210px, 20vw, 270px);
+  min-height: clamp(250px, 23vw, 310px);
+  border: 2px solid var(--qm-panel-border);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(232, 248, 255, 0.88) 58%, rgba(218, 240, 255, 0.94)),
+    radial-gradient(circle at top, rgba(0, 216, 255, 0.12), transparent 62%);
+  box-shadow:
+    var(--qm-shadow-soft),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(8px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.7rem 1.2rem;
+  position: relative;
+  transition:
+    transform 220ms ease-out,
+    border-color 220ms ease-out,
+    box-shadow 220ms ease-out,
+    background 220ms ease-out;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(0, 128, 201, 0.72);
+  }
+  &::before {
+    top: 10px;
+    left: 10px;
+    border-right: none;
+    border-bottom: none;
+  }
+  &::after {
+    bottom: 10px;
+    right: 10px;
+    border-left: none;
+    border-top: none;
+  }
+
+  .glyph {
+    font-size: clamp(2.7rem, 3.6vw, 3.4rem);
+    color: var(--qm-accent-deep);
+    text-shadow: 0 0 14px rgba(0, 216, 255, 0.18);
+    line-height: 1;
+  }
+
+  .card-name {
+    font-family: 'Orbitron', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+    letter-spacing: 0.28em;
+    color: var(--qm-text-primary);
+  }
+
+  .card-tag {
+    font-size: 0.64rem;
+    letter-spacing: 0.28em;
+    color: var(--qm-text-muted);
+  }
+
+  &.highlighted {
+    transform: translateY(-6px) scale(1.02);
+    border-color: rgba(0, 154, 255, 0.95);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(230, 251, 255, 0.98) 52%, rgba(208, 244, 255, 0.98)),
+      radial-gradient(circle at top, rgba(0, 216, 255, 0.18), transparent 60%);
+    box-shadow:
+      var(--qm-shadow-strong),
+      0 0 54px rgba(0, 192, 255, 0.24),
+      inset 0 0 0 1px rgba(255, 255, 255, 0.84);
+    animation: card-flash 420ms ease-out;
+  }
+}
+
+.prompt {
+  margin-top: 2rem;
+  font-size: 0.78rem;
+  letter-spacing: 0.34em;
+  color: var(--qm-text-secondary);
+  padding: 0.8rem 1.5rem;
+  background: rgba(255, 255, 255, 0.58);
+  border: 1px solid rgba(0, 133, 214, 0.18);
+  box-shadow: var(--qm-shadow-soft);
+}
+
+.fade-in {
+  animation: fade-in 0.8s ease-out forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-1 {
+  animation: fade-in 0.8s ease-out 0.18s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-2 {
+  animation: fade-in 0.8s ease-out 0.36s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-3 {
+  animation: fade-in 0.8s ease-out 0.54s forwards;
+  opacity: 0;
+}
+
+.fade-in-delay-4 {
+  animation: fade-in 0.8s ease-out 0.72s forwards;
+  opacity: 0;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes card-flash {
+  0% {
+    transform: translateY(0) scale(1);
+  }
+  45% {
+    transform: translateY(-8px) scale(1.04);
+  }
+  100% {
+    transform: translateY(-6px) scale(1.02);
+  }
+}

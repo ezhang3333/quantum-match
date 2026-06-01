@@ -1,10 +1,18 @@
 __pycache__/
 quantum_venv/
+venv/
 .env
 .vscode/
-model/data/
+model/data/*
+!model/data/embeddings.npy
+!model/data/names.json
+!model/data/profiles.json
+!model/data/raw_images/
+model/data/captured_face.jpg
 .DS_Store
 
+# Claude
+.claude/
+
 # Angular
-.angular/
 dist/

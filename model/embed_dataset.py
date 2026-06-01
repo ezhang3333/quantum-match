@@ -7,7 +7,7 @@ from .settings import PROFILES_PATH, OUT_EMBEDDINGS, OUT_NAMES
 
 
 def build_database():
-    with open(PROFILES_PATH) as f:
+    with open(PROFILES_PATH, "r", encoding="utf-8") as f:
         profiles = json.load(f)
 
     app = insightface.app.FaceAnalysis(name="buffalo_l")
@@ -42,8 +42,8 @@ def build_database():
         return
 
     np.save(OUT_EMBEDDINGS, np.array(embeddings, dtype=np.float32))
-    with open(OUT_NAMES, "w") as f:
-        json.dump(names, f, indent=2)
+    with open(OUT_NAMES, "w", encoding="utf-8") as f:
+        json.dump(names, f, indent=2, ensure_ascii=False)
 
     if skipped:
         print(f"\nSkipped: {skipped}")

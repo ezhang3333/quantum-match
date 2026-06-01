@@ -1,0 +1,1206 @@
+{
+  "Marcela Carena": {
+    "name": "Marcela Carena",
+    "profile_url": "https://perimeterinstitute.ca/people/marcela-carena",
+    "role": "Research Faculty Office of Executive Leadership",
+    "position": "Executive Director",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Marcela Carena.jpg"
+  },
+  "Freddy Cachazo": {
+    "name": "Freddy Cachazo",
+    "profile_url": "https://perimeterinstitute.ca/people/freddy-cachazo",
+    "role": "Research Faculty Office of Executive Leadership",
+    "position": "Deputy Director",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Freddy Cachazo.jpg"
+  },
+  "Bianca Dittrich": {
+    "name": "Bianca Dittrich",
+    "profile_url": "https://perimeterinstitute.ca/people/bianca-dittrich",
+    "role": "Research Faculty Office of Executive Leadership",
+    "position": "Faculty Chair",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Bianca Dittrich.jpg"
+  },
+  "Robert Myers": {
+    "name": "Robert Myers",
+    "profile_url": "https://perimeterinstitute.ca/people/robert-myers",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Director Emeritus",
+    "secondary_position": "BMO Financial Group Isaac Newton Chair in Theoretical Physics",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Robert Myers.jpg"
+  },
+  "Asimina Arvanitaki": {
+    "name": "Asimina Arvanitaki",
+    "profile_url": "https://perimeterinstitute.ca/people/asimina-arvanitaki",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Stavros Niarchos Foundation Aristarchus Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Asimina Arvanitaki.jpg"
+  },
+  "Michael Borinsky": {
+    "name": "Michael Borinsky",
+    "profile_url": "https://perimeterinstitute.ca/people/michael-borinsky",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Michael Borinsky.jpg"
+  },
+  "Kevin Costello": {
+    "name": "Kevin Costello",
+    "profile_url": "https://perimeterinstitute.ca/people/kevin-costello",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Krembil William Rowan Hamilton Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Kevin Costello.jpg"
+  },
+  "Neal Dalal": {
+    "name": "Neal Dalal",
+    "profile_url": "https://perimeterinstitute.ca/people/neal-dalal",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Neal Dalal.jpg"
+  },
+  "William East": {
+    "name": "William East",
+    "profile_url": "https://perimeterinstitute.ca/people/william-east",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/William East.jpg"
+  },
+  "Dominic Else": {
+    "name": "Dominic Else",
+    "profile_url": "https://perimeterinstitute.ca/people/dominic-else",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Dominic Else.jpg"
+  },
+  "Laurent Freidel": {
+    "name": "Laurent Freidel",
+    "profile_url": "https://perimeterinstitute.ca/people/laurent-freidel",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Laurent Freidel.jpg"
+  },
+  "Davide Gaiotto": {
+    "name": "Davide Gaiotto",
+    "profile_url": "https://perimeterinstitute.ca/people/davide-gaiotto",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Krembil Galileo Galilei Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Davide Gaiotto.jpg"
+  },
+  "Jaume Gomis": {
+    "name": "Jaume Gomis",
+    "profile_url": "https://perimeterinstitute.ca/people/jaume-gomis",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Jaume Gomis.jpg"
+  },
+  "Lucien Hardy": {
+    "name": "Lucien Hardy",
+    "profile_url": "https://perimeterinstitute.ca/people/lucien-hardy",
+    "role": "Research Faculty Office of Executive Leadership",
+    "position": "Deputy Faculty Chair",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Foundations"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Lucien Hardy.jpg"
+  },
+  "Yin-Chen He": {
+    "name": "Yin-Chen He",
+    "profile_url": "https://perimeterinstitute.ca/people/yin-chen-he",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Yin-Chen He.jpg"
+  },
+  "Timothy Hsieh": {
+    "name": "Timothy Hsieh",
+    "profile_url": "https://perimeterinstitute.ca/people/timothy-hsieh",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information",
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Timothy Hsieh.jpg"
+  },
+  "Junwu Huang": {
+    "name": "Junwu Huang",
+    "profile_url": "https://perimeterinstitute.ca/people/junwu-huang",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Junwu Huang.jpg"
+  },
+  "Luis Lehner": {
+    "name": "Luis Lehner",
+    "profile_url": "https://perimeterinstitute.ca/people/luis-lehner",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Carlo Fidani Rainer Weiss Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity",
+      "Other"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Luis Lehner.jpg"
+  },
+  "Alex May": {
+    "name": "Alex May",
+    "profile_url": "https://perimeterinstitute.ca/people/alex-may",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "Murray Gell-Mann Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings",
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Alex May.jpg"
+  },
+  "Sabrina Pasterski": {
+    "name": "Sabrina Pasterski",
+    "profile_url": "https://perimeterinstitute.ca/people/sabrina-pasterski",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sabrina Pasterski.jpg"
+  },
+  "Kendrick Smith": {
+    "name": "Kendrick Smith",
+    "profile_url": "https://perimeterinstitute.ca/people/kendrick-smith",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "The Daniel Family James Peebles Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Kendrick Smith.jpg"
+  },
+  "Lee Smolin": {
+    "name": "Lee Smolin",
+    "profile_url": "https://perimeterinstitute.ca/people/lee-smolin",
+    "role": "Research Faculty",
+    "position": "Senior Faculty (ON LEAVE)",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Quantum Foundations",
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Lee Smolin.jpg"
+  },
+  "Robert Spekkens": {
+    "name": "Robert Spekkens",
+    "profile_url": "https://perimeterinstitute.ca/people/robert-spekkens",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Foundations"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Robert Spekkens.jpg"
+  },
+  "Pedro Vieira": {
+    "name": "Pedro Vieira",
+    "profile_url": "https://perimeterinstitute.ca/people/pedro-vieira",
+    "role": "Research Faculty Perimeter Research Chair",
+    "position": "The Clay Riddell Paul Dirac Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Pedro Vieira.jpg"
+  },
+  "Chong Wang": {
+    "name": "Chong Wang",
+    "profile_url": "https://perimeterinstitute.ca/people/chong-wang",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Chong Wang.jpg"
+  },
+  "Mayuko Yamashita": {
+    "name": "Mayuko Yamashita",
+    "profile_url": "https://perimeterinstitute.ca/people/mayuko-yamashita",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Mayuko Yamashita.jpg"
+  },
+  "Beni Yoshida": {
+    "name": "Beni Yoshida",
+    "profile_url": "https://perimeterinstitute.ca/people/beni-yoshida",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information",
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Beni Yoshida.jpg"
+  },
+  "Sisi Zhou": {
+    "name": "Sisi Zhou",
+    "profile_url": "https://perimeterinstitute.ca/people/sisi-zhou",
+    "role": "Research Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sisi Zhou.jpg"
+  },
+  "Katherine Mack": {
+    "name": "Katherine Mack",
+    "profile_url": "https://perimeterinstitute.ca/people/katherine-mack",
+    "role": "Outreach Faculty",
+    "position": "Hawking Chair in Cosmology and Science Communication",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Katherine Mack.jpg"
+  },
+  "Maïté Dupuis": {
+    "name": "Maïté Dupuis",
+    "profile_url": "https://perimeterinstitute.ca/people/maite-dupuis",
+    "role": "Teaching Faculty Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "Director, Training, Educational Outreach and Scientific Programs",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Maïté Dupuis.jpg"
+  },
+  "Ghazal Geshnizjani": {
+    "name": "Ghazal Geshnizjani",
+    "profile_url": "https://perimeterinstitute.ca/people/ghazal-geshnizjani",
+    "role": "Teaching Faculty Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "Teaching Faculty",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Ghazal Geshnizjani.jpg"
+  },
+  "Lauren Hayward": {
+    "name": "Lauren Hayward",
+    "profile_url": "https://perimeterinstitute.ca/people/lauren-hayward",
+    "role": "Teaching Faculty Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "Associate Director, Training Programs",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Lauren Hayward.jpg"
+  },
+  "Aldo Riello": {
+    "name": "Aldo Riello",
+    "profile_url": "https://perimeterinstitute.ca/people/aldo-riello",
+    "role": "Teaching Faculty Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "Teaching Faculty",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Aldo Riello.jpg"
+  },
+  "Neil Turok": {
+    "name": "Neil Turok",
+    "profile_url": "https://perimeterinstitute.ca/people/neil-turok",
+    "role": "Perimeter Research Chair",
+    "position": "Carlo Fidani Roger Penrose Distinguished Visiting Research Chair in Theoretical Physics",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Neil Turok.jpg"
+  },
+  "Savas Dimopoulos": {
+    "name": "Savas Dimopoulos",
+    "profile_url": "https://perimeterinstitute.ca/people/savas-dimopoulos",
+    "role": "Perimeter Research Chair (Visiting)",
+    "position": "Coril Holdings Archimedes Chair in Theoretical Physics (Visiting)",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Savas Dimopoulos.jpg"
+  },
+  "Avery Broderick": {
+    "name": "Avery Broderick",
+    "profile_url": "https://perimeterinstitute.ca/people/avery-broderick",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Avery Broderick.jpg"
+  },
+  "Niayesh Afshordi": {
+    "name": "Niayesh Afshordi",
+    "profile_url": "https://perimeterinstitute.ca/people/niayesh-afshordi",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Quantum Gravity",
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Niayesh Afshordi.jpg"
+  },
+  "Alexander Braverman": {
+    "name": "Alexander Braverman",
+    "profile_url": "https://perimeterinstitute.ca/people/alexander-braverman",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Alexander Braverman.jpg"
+  },
+  "Cliff Burgess": {
+    "name": "Cliff Burgess",
+    "profile_url": "https://perimeterinstitute.ca/people/cliff-burgess",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Cliff Burgess.jpg"
+  },
+  "Anton Burkov": {
+    "name": "Anton Burkov",
+    "profile_url": "https://perimeterinstitute.ca/people/anton-burkov",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Anton Burkov.jpg"
+  },
+  "David Gosset": {
+    "name": "David Gosset",
+    "profile_url": "https://perimeterinstitute.ca/people/david-gosset",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/David Gosset.jpg"
+  },
+  "Matthew Johnson": {
+    "name": "Matthew Johnson",
+    "profile_url": "https://perimeterinstitute.ca/people/matthew-johnson",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Matthew Johnson.jpg"
+  },
+  "Theo Johnson-Freyd": {
+    "name": "Theo Johnson-Freyd",
+    "profile_url": "https://perimeterinstitute.ca/people/theo-johnson-freyd",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Theo Johnson-Freyd.jpg"
+  },
+  "Raymond Laflamme": {
+    "name": "Raymond Laflamme",
+    "profile_url": "https://perimeterinstitute.ca/people/raymond-laflamme",
+    "role": "Research Associate Faculty",
+    "position": "1960 - 2025",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Raymond Laflamme.jpg"
+  },
+  "Sung-Sik Lee": {
+    "name": "Sung-Sik Lee",
+    "profile_url": "https://perimeterinstitute.ca/people/sung-sik-lee",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings",
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sung-Sik Lee.jpg"
+  },
+  "Debbie Leung": {
+    "name": "Debbie Leung",
+    "profile_url": "https://perimeterinstitute.ca/people/debbie-leung",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Debbie Leung.jpg"
+  },
+  "Roger Melko": {
+    "name": "Roger Melko",
+    "profile_url": "https://perimeterinstitute.ca/people/roger-melko",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Roger Melko.jpg"
+  },
+  "Michele Mosca": {
+    "name": "Michele Mosca",
+    "profile_url": "https://perimeterinstitute.ca/people/michele-mosca",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Michele Mosca.jpg"
+  },
+  "Christine Muschik": {
+    "name": "Christine Muschik",
+    "profile_url": "https://perimeterinstitute.ca/people/christine-muschik",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Christine Muschik.jpg"
+  },
+  "Ue-Li Pen": {
+    "name": "Ue-Li Pen",
+    "profile_url": "https://perimeterinstitute.ca/people/ue-li-pen",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Ue-Li Pen.jpg"
+  },
+  "Will Percival": {
+    "name": "Will Percival",
+    "profile_url": "https://perimeterinstitute.ca/people/will-percival",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Will Percival.jpg"
+  },
+  "Sergey Sibiryakov": {
+    "name": "Sergey Sibiryakov",
+    "profile_url": "https://perimeterinstitute.ca/people/sergey-sibiryakov",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sergey Sibiryakov.jpg"
+  },
+  "Ben Webster": {
+    "name": "Ben Webster",
+    "profile_url": "https://perimeterinstitute.ca/people/ben-webster",
+    "role": "Research Associate Faculty",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Ben Webster.jpg"
+  },
+  "Nathan Haouzi": {
+    "name": "Nathan Haouzi",
+    "profile_url": "https://perimeterinstitute.ca/people/nathan-haouzi",
+    "role": "Academic Staff",
+    "position": "Teaching Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Nathan Haouzi.jpg"
+  },
+  "Naren Manjunath": {
+    "name": "Naren Manjunath",
+    "profile_url": "https://perimeterinstitute.ca/people/naren-manjunath",
+    "role": "Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "PSI Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Naren Manjunath.jpg"
+  },
+  "David Schmid": {
+    "name": "David Schmid",
+    "profile_url": "https://perimeterinstitute.ca/people/david-schmid",
+    "role": "Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "PSI Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Foundations"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/David Schmid.jpg"
+  },
+  "Dan Wohns": {
+    "name": "Dan Wohns",
+    "profile_url": "https://perimeterinstitute.ca/people/dan-wohns",
+    "role": "Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "Lecturer",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Dan Wohns.jpg"
+  },
+  "Gang Xu": {
+    "name": "Gang Xu",
+    "profile_url": "https://perimeterinstitute.ca/people/gang-xu",
+    "role": "Academic Staff Training, Educational Outreach and Scientific Programs",
+    "position": "PSI Lecturer",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Gang Xu.jpg"
+  },
+  "Estelle Maeva Inack": {
+    "name": "Estelle Maeva Inack",
+    "profile_url": "https://perimeterinstitute.ca/people/estelle-maeva-inack",
+    "role": "Research Scientist",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Estelle Maeva Inack.jpg"
+  },
+  "Pooya Ronagh": {
+    "name": "Pooya Ronagh",
+    "profile_url": "https://perimeterinstitute.ca/people/pooya-ronagh",
+    "role": "Research Scientist",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Pooya Ronagh.jpg"
+  },
+  "Geoffrey Ryan": {
+    "name": "Geoffrey Ryan",
+    "profile_url": "https://perimeterinstitute.ca/people/geoffrey-ryan",
+    "role": "Research Scientist",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Geoffrey Ryan.jpg"
+  },
+  "Elie Wolfe": {
+    "name": "Elie Wolfe",
+    "profile_url": "https://perimeterinstitute.ca/people/elie-wolfe",
+    "role": "Research Scientist",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Foundations",
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Elie Wolfe.jpg"
+  },
+  "Achim Kempf": {
+    "name": "Achim Kempf",
+    "profile_url": "https://perimeterinstitute.ca/people/achim-kempf",
+    "role": "Research Associate",
+    "position": "",
+    "secondary_position": "Research Associate",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Achim Kempf.jpg"
+  },
+  "Steve MacLean": {
+    "name": "Steve MacLean",
+    "profile_url": "https://perimeterinstitute.ca/people/steve-maclean",
+    "role": "Research Associate",
+    "position": "Senior Research Affiliate",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Steve MacLean.jpg"
+  },
+  "John Moffat": {
+    "name": "John Moffat",
+    "profile_url": "https://perimeterinstitute.ca/people/john-moffat",
+    "role": "Research Associate",
+    "position": "Senior Research Affiliate",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Particle Physics",
+      "Quantum Gravity",
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/John Moffat.jpg"
+  },
+  "Rafael Sorkin": {
+    "name": "Rafael Sorkin",
+    "profile_url": "https://perimeterinstitute.ca/people/rafael-sorkin",
+    "role": "Research Associate",
+    "position": "Researcher Emeritus",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology",
+      "Quantum Foundations",
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Rafael Sorkin.jpg"
+  },
+  "Federico Ambrosino": {
+    "name": "Federico Ambrosino",
+    "profile_url": "https://perimeterinstitute.ca/people/federico-ambrosino",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Federico Ambrosino.jpg"
+  },
+  "Rodrigo Andrade E Silva": {
+    "name": "Rodrigo Andrade E Silva",
+    "profile_url": "https://perimeterinstitute.ca/people/rodrigo-andrade-e-silva",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Rodrigo Andrade E Silva.jpg"
+  },
+  "Roberto Baldijao": {
+    "name": "Roberto Baldijao",
+    "profile_url": "https://perimeterinstitute.ca/people/roberto-baldijao",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Roberto Baldijao.jpg"
+  },
+  "Caio B. de S. Nascimento": {
+    "name": "Caio B. de S. Nascimento",
+    "profile_url": "https://perimeterinstitute.ca/people/caio-b-de-s-nascimento",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Caio B. de S. Nascimento.jpg"
+  },
+  "Connor Behan": {
+    "name": "Connor Behan",
+    "profile_url": "https://perimeterinstitute.ca/people/connor-behan",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Connor Behan.jpg"
+  },
+  "Pedro Bittar": {
+    "name": "Pedro Bittar",
+    "profile_url": "https://perimeterinstitute.ca/people/pedro-bittar",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Pedro Bittar.jpg"
+  },
+  "Roland Bittleston": {
+    "name": "Roland Bittleston",
+    "profile_url": "https://perimeterinstitute.ca/people/roland-bittleston",
+    "role": "Postdoctoral Researcher",
+    "position": "Senior Postdoctoral Research Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Roland Bittleston.jpg"
+  },
+  "Sihao Cheng": {
+    "name": "Sihao Cheng",
+    "profile_url": "https://perimeterinstitute.ca/people/sihao-cheng",
+    "role": "Postdoctoral Researcher",
+    "position": "Senior Postdoctoral Research Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sihao Cheng.jpg"
+  },
+  "Changha Choi": {
+    "name": "Changha Choi",
+    "profile_url": "https://perimeterinstitute.ca/people/changha-choi",
+    "role": "Postdoctoral Researcher",
+    "position": "Richard Feynman Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Changha Choi.jpg"
+  },
+  "Luca Ciambelli": {
+    "name": "Luca Ciambelli",
+    "profile_url": "https://perimeterinstitute.ca/people/luca-ciambelli",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings",
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Luca Ciambelli.jpg"
+  },
+  "Luciano Combi": {
+    "name": "Luciano Combi",
+    "profile_url": "https://perimeterinstitute.ca/people/luciano-combi",
+    "role": "Postdoctoral Researcher",
+    "position": "Joint Postdoctoral Research Fellow - University of Guelph/Perimeter",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Luciano Combi.jpg"
+  },
+  "Marco Costa": {
+    "name": "Marco Costa",
+    "profile_url": "https://perimeterinstitute.ca/people/marco-costa",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Marco Costa.jpg"
+  },
+  "Marina De Amicis": {
+    "name": "Marina De Amicis",
+    "profile_url": "https://perimeterinstitute.ca/people/marina-de-amicis",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Marina De Amicis.jpg"
+  },
+  "Samuel DeHority": {
+    "name": "Samuel DeHority",
+    "profile_url": "https://perimeterinstitute.ca/people/samuel-dehority",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Samuel DeHority.jpg"
+  },
+  "Ana Ennis": {
+    "name": "Ana Ennis",
+    "profile_url": "https://perimeterinstitute.ca/people/ana-ennis",
+    "role": "Postdoctoral Researcher",
+    "position": "Joint Postdoctoral Research Fellow - Perimeter/UW(Centre for Astrophysics)",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Ana Ennis.jpg"
+  },
+  "Encieh Erfani": {
+    "name": "Encieh Erfani",
+    "profile_url": "https://perimeterinstitute.ca/people/encieh-erfani",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Encieh Erfani.jpg"
+  },
+  "Tamara Evstafyeva": {
+    "name": "Tamara Evstafyeva",
+    "profile_url": "https://perimeterinstitute.ca/people/tamara-evstafyeva",
+    "role": "Postdoctoral Researcher",
+    "position": "Vera Florence Cooper Rubin Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Tamara Evstafyeva.jpg"
+  },
+  "Michael Fedderke": {
+    "name": "Michael Fedderke",
+    "profile_url": "https://perimeterinstitute.ca/people/michael-fedderke",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Michael Fedderke.jpg"
+  },
+  "Raz Firanko": {
+    "name": "Raz Firanko",
+    "profile_url": "https://perimeterinstitute.ca/people/raz-firanko",
+    "role": "Postdoctoral Researcher",
+    "position": "Joint Postdoctoral Research Fellow - Perimeter/IQC",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information",
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Raz Firanko.jpg"
+  },
+  "Suroor Seher Gandhi": {
+    "name": "Suroor Seher Gandhi",
+    "profile_url": "https://perimeterinstitute.ca/people/suroor-seher-gandhi",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Suroor Seher Gandhi.jpg"
+  },
+  "Pranay Gorantla": {
+    "name": "Pranay Gorantla",
+    "profile_url": "https://perimeterinstitute.ca/people/pranay-gorantla",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Pranay Gorantla.jpg"
+  },
+  "James Gurian": {
+    "name": "James Gurian",
+    "profile_url": "https://perimeterinstitute.ca/people/james-gurian",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/James Gurian.jpg"
+  },
+  "Yaroslav Herasymenko": {
+    "name": "Yaroslav Herasymenko",
+    "profile_url": "https://perimeterinstitute.ca/people/yaroslav-herasymenko",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Information",
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Yaroslav Herasymenko.jpg"
+  },
+  "Kenneth Higginbotham": {
+    "name": "Kenneth Higginbotham",
+    "profile_url": "https://perimeterinstitute.ca/people/kenneth-higginbotham",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Kenneth Higginbotham.jpg"
+  },
+  "Selim Hotinli": {
+    "name": "Selim Hotinli",
+    "profile_url": "https://perimeterinstitute.ca/people/selim-hotinli",
+    "role": "Postdoctoral Researcher",
+    "position": "P. J. E. Peebles Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Selim Hotinli.jpg"
+  },
+  "Xiaoyang Huang": {
+    "name": "Xiaoyang Huang",
+    "profile_url": "https://perimeterinstitute.ca/people/xiaoyang-huang",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Xiaoyang Huang.jpg"
+  },
+  "Christopher Jackson": {
+    "name": "Christopher Jackson",
+    "profile_url": "https://perimeterinstitute.ca/people/christopher-jackson",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Foundations",
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Christopher Jackson.jpg"
+  },
+  "Zahra Khanian": {
+    "name": "Zahra Khanian",
+    "profile_url": "https://perimeterinstitute.ca/people/zahra-khanian",
+    "role": "Postdoctoral Researcher",
+    "position": "Ada Lovelace Fellow",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Zahra Khanian.jpg"
+  },
+  "Joshua Kirklin": {
+    "name": "Joshua Kirklin",
+    "profile_url": "https://perimeterinstitute.ca/people/joshua-kirklin",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Joshua Kirklin.jpg"
+  },
+  "Sonja Klisch": {
+    "name": "Sonja Klisch",
+    "profile_url": "https://perimeterinstitute.ca/people/sonja-klisch",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sonja Klisch.jpg"
+  },
+  "Simon Langenscheidt": {
+    "name": "Simon Langenscheidt",
+    "profile_url": "https://perimeterinstitute.ca/people/simon-langenscheidt",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Simon Langenscheidt.jpg"
+  },
+  "Ryan Lanzetta": {
+    "name": "Ryan Lanzetta",
+    "profile_url": "https://perimeterinstitute.ca/people/ryan-lanzetta",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Matter"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Ryan Lanzetta.jpg"
+  },
+  "Benoit Laurent": {
+    "name": "Benoit Laurent",
+    "profile_url": "https://perimeterinstitute.ca/people/benoit-laurent",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Particle Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Benoit Laurent.jpg"
+  },
+  "Qiushi Liu": {
+    "name": "Qiushi Liu",
+    "profile_url": "https://perimeterinstitute.ca/people/qiushi-liu",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Qiushi Liu.jpg"
+  },
+  "Xiaoyi Liu": {
+    "name": "Xiaoyi Liu",
+    "profile_url": "https://perimeterinstitute.ca/people/xiaoyi-liu",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Xiaoyi Liu.jpg"
+  },
+  "Sizheng Ma": {
+    "name": "Sizheng Ma",
+    "profile_url": "https://perimeterinstitute.ca/people/sizheng-ma",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Strong Gravity"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sizheng Ma.jpg"
+  },
+  "Mariem Magdy": {
+    "name": "Mariem Magdy",
+    "profile_url": "https://perimeterinstitute.ca/people/mariem-magdy",
+    "role": "Postdoctoral Researcher",
+    "position": "Joint Postdoctoral Research Fellow - Perimeter/Fields/Aims",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Mariem Magdy.jpg"
+  },
+  "Anindita Maiti": {
+    "name": "Anindita Maiti",
+    "profile_url": "https://perimeterinstitute.ca/people/anindita-maiti",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics",
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Anindita Maiti.jpg"
+  },
+  "Yusuke Manita": {
+    "name": "Yusuke Manita",
+    "profile_url": "https://perimeterinstitute.ca/people/yusuke-manita",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Cosmology"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Yusuke Manita.jpg"
+  },
+  "Alexander Meiburg": {
+    "name": "Alexander Meiburg",
+    "profile_url": "https://perimeterinstitute.ca/people/alexander-meiburg",
+    "role": "Postdoctoral Researcher",
+    "position": "Joint Postdoctoral Research Fellow IQC/Perimeter",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Information"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Alexander Meiburg.jpg"
+  },
+  "Sruthi Narayanan": {
+    "name": "Sruthi Narayanan",
+    "profile_url": "https://perimeterinstitute.ca/people/sruthi-narayanan",
+    "role": "Postdoctoral Researcher",
+    "position": "",
+    "secondary_position": "",
+    "research_areas": [
+      "Quantum Fields and Strings"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Sruthi Narayanan.jpg"
+  },
+  "Wenjun Niu": {
+    "name": "Wenjun Niu",
+    "profile_url": "https://perimeterinstitute.ca/people/wenjun-niu",
+    "role": "Postdoctoral Researcher",
+    "position": "ON LEAVE",
+    "secondary_position": "",
+    "research_areas": [
+      "Mathematical Physics"
+    ],
+    "image_path": "/home/quantum_mirror/ECE-445-SP26-Team-8/model/data/raw_images/Wenjun Niu.jpg"
+  }
+}

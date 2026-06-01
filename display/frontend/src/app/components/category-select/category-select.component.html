@@ -1,0 +1,33 @@
+<div class="category-screen">
+  <div class="grid-overlay"></div>
+  <div class="content-shell">
+    <div class="label fade-in">CATEGORY MATRIX</div>
+    <h1 class="headline fade-in">CHOOSE YOUR FUTURE</h1>
+    <p class="subhead fade-in-delay-1">SELECT A DOMAIN TO COLLAPSE THE MATCH SPACE</p>
+
+    <div class="card-row">
+      <div class="category-card fade-in-delay-1"
+           [class.highlighted]="(highlighted$ | async) === 'scientist'">
+        <div class="glyph">&#x269B;</div>
+        <div class="card-name">SCIENTIST</div>
+        <div class="card-tag">PURE RESEARCH</div>
+      </div>
+
+      <div class="category-card fade-in-delay-2"
+           [class.highlighted]="(highlighted$ | async) === 'engineer'">
+        <div class="glyph">&#x2699;</div>
+        <div class="card-name">ENGINEER</div>
+        <div class="card-tag">APPLIED SYSTEMS</div>
+      </div>
+
+      <div class="category-card fade-in-delay-3"
+           [class.highlighted]="(highlighted$ | async) === 'entrepreneur'">
+        <div class="glyph">&#x2756;</div>
+        <div class="card-name">ENTREPRENEUR</div>
+        <div class="card-tag">VENTURE BUILDER</div>
+      </div>
+    </div>
+
+    <p class="prompt fade-in-delay-4">PRESS A BUTTON ON THE INTERFACE</p>
+  </div>
+</div>

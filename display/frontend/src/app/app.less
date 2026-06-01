@@ -1,0 +1,61 @@
+:host {
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  background: var(--qm-bg);
+}
+
+.mirror-root {
+  width: 100%;
+  height: 100%;
+  background: var(--qm-bg-layer);
+  transition:
+    background 320ms ease-out,
+    color 220ms ease-out;
+}
+
+.mirror-root.theme-idle {
+  --qm-bg: #000;
+  --qm-bg-layer:
+    radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.12), transparent 42%),
+    #000;
+}
+
+.mirror-root.theme-active-bright {
+  --qm-bg: #eef7ff;
+  --qm-bg-layer:
+    radial-gradient(circle at 18% 18%, rgba(0, 240, 255, 0.28), transparent 30%),
+    radial-gradient(circle at 82% 12%, rgba(0, 102, 255, 0.18), transparent 28%),
+    radial-gradient(circle at 50% 82%, rgba(111, 235, 255, 0.2), transparent 34%),
+    linear-gradient(180deg, #f7fcff 0%, #ecf8ff 48%, #e4f3ff 100%);
+  --qm-surface: rgba(255, 255, 255, 0.72);
+  --qm-surface-strong: rgba(255, 255, 255, 0.9);
+  --qm-surface-soft: rgba(0, 240, 255, 0.08);
+  --qm-panel-border: rgba(0, 139, 214, 0.34);
+  --qm-grid-line: rgba(0, 126, 204, 0.12);
+  --qm-grid-glow: rgba(0, 214, 255, 0.18);
+  --qm-accent: #009dff;
+  --qm-accent-strong: #00d8ff;
+  --qm-accent-deep: #004fd6;
+  --qm-text-primary: #071a2d;
+  --qm-text-secondary: rgba(7, 26, 45, 0.88);
+  --qm-text-muted: rgba(7, 26, 45, 0.66);
+  --qm-shadow-soft: 0 24px 56px rgba(18, 94, 142, 0.14);
+  --qm-shadow-strong: 0 28px 74px rgba(0, 132, 214, 0.2);
+}
+
+.state-view {
+  display: block;
+  width: 100%;
+  height: 100%;
+  animation: state-fade-in 0.6s ease-out;
+}
+
+@keyframes state-fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

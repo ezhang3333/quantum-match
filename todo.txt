@@ -1,0 +1,3 @@
+1. Bluetooth setup from esp32 buttons eventually
+2. create readme with the commands to do both like intial setup and also run the validation loop
+3. Need a "Choose your future" page where it tells users to select what category they would like to filter the database by
